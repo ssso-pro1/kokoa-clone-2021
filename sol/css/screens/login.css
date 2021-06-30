@@ -1,0 +1,77 @@
+.welcome-header {
+  /* h1 p 이런 텍스트들 */
+  margin: 90px 0px;
+  text-align: center;
+  display: flex; /* h1 p a 등 조절위해 */
+  flex-direction: column; /*한줄로*/
+  align-items: center; /*주축 가운데*/
+  font-weight: 600;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+/* text 가 끝까지 퍼지지 않도록 */
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7; /* 회색으로 하는대신 */
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* *** BEM 사용했을 떄 */
+.login-form__btn {
+}
+.login-form__input {
+}
+.login-form__a {
+}
+
+/* *** class & id 사용했을 때 */
+
+/* input:not([]) */
+/* input : text2, button1 중에서 text인 것만 적용되는 것 */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /* inherit : 상속, 아버지로부터 색상 받아옴(default: black) */
+  font-size: 13px;
+}
