@@ -1,0 +1,126 @@
+body {
+  height: 900px;
+}
+.status-bar {
+  margin-bottom: 50px;
+}
+
+.friends-header__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.friends-header__title {
+  font-size: 30px;
+}
+
+.friends-header__icons {
+  font-size: 20px;
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+.friends-header__row:nth-child(2) {
+  background-color: var(--light-grey1);
+  color: var(--dark-grey);
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* padding: 2px; */
+  padding-right: 13px;
+}
+
+.friends-header__row-i,
+.friends-header__row-right {
+  color: var(--light-grey2);
+}
+
+.profile {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+.profile__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 40px;
+}
+.profile__name {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.profile__line {
+  /* height: 1px;
+  width: 80%;
+  background-color: var(--light-grey); */
+  border: 1px solid var(--light-grey1);
+  width: 95%;
+}
+
+.channel-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.channel-nav__title,
+.channel-nav__arrow {
+  color: var(--light-grey2);
+  font-weight: 600;
+}
+
+.channel-nav__row {
+  margin-bottom: 22px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* just */
+}
+
+.channel-nav__profile {
+  display: flex;
+  align-items: center;
+}
+
+.row__profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.row__name {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.channel-nav__etc {
+  color: var(--light-grey2);
+  font-size: 20px;
+}
+
+.friends-navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: var(--light-grey1);
+  color: var(--dark-grey);
+  font-size: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
