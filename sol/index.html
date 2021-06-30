@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+    <!-- index : first -->
+    <!-- button BEM (2개의 클래스 이름 가진 것처럼 보이지만, css에서는 하나의 클래스 이름. 이해용이하게 )
+    <a class="btn btn--big btn--orange">
+        <span class="btn__price"> 9.99</span>  
+        <span class="btn__text"> Subscribe </span>
+    .accordion/ .coordion__title/ .accordion__title:hover / .accordion__copy--open -->
+    <!-- "하나의 클래스이름이고 father__children" -->
+
+    <!-- #6.2 BEM 쓰는 게 좋을지 / id, class 쓰는 게 좋은지  -->
+
+    <!-- #6.3 font awesome : 아이콘 html다운 받아서 코드 복사 붙여넣기-->
+
+    <!-- "link:css" -->
+   
+    
+</head>
+<body>
+    <!-- status-bar -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i> 
+        </div> 
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i> <!--fa-lg 붙이면 아이콘 더 크게 -->
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <!-- header -->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+
+    <!-- form(input, button) -->
+    <!-- action: 해당 데이터를 어디로 보낼 것인지 -->
+    <!-- post : 백엔드에 정보보내는 것 -->
+    <!-- get : url에 포함돼도 되는 정보들을 get방식으로 보냄 (비번 같은 정보는 x). 
+        지금은 서버가 없어서 우리는 get방식으로 사용.
+        만약 데이터를 서버로 보내고 싶다면 post방식 사용 -->
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number">
+        <input name="password" type="password" placeholder="Password">
+        <input type="submit" value="Log in"> <!-- button -->
+        <a href="#">Fine Kokoa Account or Password</a>
+    </form>
+
+    
+    <!-- script태그는 body 맨 마지막에 쓰기 / codekit 설치(노마드 이메일로) -->
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
