@@ -1,0 +1,34 @@
+.status-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  /* ** justify-content: space-between; 3개 서로 띄어서, but 3개 각 너비 달라서 센터에 딱 안오는 문제 */
+  align-items: center;
+  padding: 5px 3px;
+}
+
+/* ** */
+.status-bar__column {
+  width: 33%;
+}
+/* ** */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center; /* 시간 column center로 옴*/
+}
+/* ** */
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end; /* 마지막 column 오른쪽 끝 */
+  align-items: center; /*위로 올라가있는 아이콘 가운데로 내리기 (교차축에서 가운데)*/
+}
+
+/* No Service, wifi 사이 공간 만들기 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
