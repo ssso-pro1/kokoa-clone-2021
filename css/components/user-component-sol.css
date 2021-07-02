@@ -1,0 +1,61 @@
+.user-component {
+  display: flex;
+}
+
+.user-component {
+  justify-content: space-between;
+}
+/* 2개의 column을 다른 클래스명을 주는 게 아니라, 똑같이 하고, first-child이런 식으로 명시 */
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+/* 아바타 사진 사이즈 s, m, l가 있어서 m으로 만들어두고 변경해서 사용 */
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.user__component__title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.user__component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user__component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* chat 1을 오른쪽으로 옮김
+   -> friends 에서 break 되는 문제*/
+}
+
+.user-component__time {
+  margin-bottom: 5px;
+  display: block;
+}

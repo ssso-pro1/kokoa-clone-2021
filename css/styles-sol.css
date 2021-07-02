@@ -14,6 +14,8 @@
 @import "components/status-bar-sol.css";
 @import "components/nav-bar-sol.css";
 @import "components/screen-header-sol.css";
+@import "components/user-component-sol.css";
+@import "components/badge-sol.css";
 
 /* Screens */
 @import "screens/login-sol.css"; /* 1 font-family : apple */
@@ -22,5 +24,9 @@
 /* styles.css 파일에는 font-family, background-color 등과 같이 모든 스크린에 적용될 수 있는 스타일 써두는 것 */
 body {
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

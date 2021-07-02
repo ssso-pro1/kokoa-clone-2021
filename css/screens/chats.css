@@ -1,0 +1,23 @@
+.user-component__column {
+  position: relative;
+}
+
+.user-component__column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-notification {
+  position: absolute;
+  top: 25px;
+  background-color: tomato;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}

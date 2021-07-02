@@ -43,22 +43,13 @@
     기본적으로 body가 그에 해당되며, 따로 원하는 기준이 있다면 
     그 container에 position: relative;를 준다. */
 
-.nav-notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: white;
-  font-weight: 600;
+.nav__notification {
   position: absolute;
   left: 15px;
   bottom: 15px;
 }
 
-.nav-notification2 {
+.nav__notification2 {
   background-color: tomato;
   width: 8px;
   height: 8px;
