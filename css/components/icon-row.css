@@ -1,0 +1,20 @@
+/* 
+find-sol.css 에 있던 .find-icons 를 ->components/ icon-row.css로 바꾸면서 
+.icons-row 로 변경 */
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row__icon {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.icon-row__icon span {
+  /* icon마다 다른 높이 보기 안 좋아서 통일할 수 있도록 span위의 마진값 줌 */
+  margin-top: 15px;
+}
