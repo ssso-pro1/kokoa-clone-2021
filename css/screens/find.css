@@ -1,0 +1,18 @@
+.recommended-friends {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.recommended-friends__text {
+  position: relative;
+}
+
+.recommended-friends__title {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.recommended-friends__p {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  color: rgba(0, 0, 0, 0.5);
+}
