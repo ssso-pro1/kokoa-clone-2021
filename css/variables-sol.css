@@ -1,8 +1,15 @@
 :root {
   --yellow: #fae100;
-  --white: #ffffff;
+  /* --white: #ffffff;
   --light-grey1: #f6f6f6;
   --light-grey2: #aaaaaa;
   --dark-grey: rgb(70, 69, 69);
-  --dark-grey2: #0e0e0e;
+  --dark-grey2: #0e0e0e; */
+
+  --horizontal-space: 25px;
+
+  --color-black-5: rgba(0, 0, 0, 0.5);
+  --color-black-3: rgba(0, 0, 0, 0.3);
+  --color-black-2: rgba(0, 0, 0, 0.2);
+  --color
 }
