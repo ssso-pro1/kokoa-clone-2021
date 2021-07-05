@@ -4,6 +4,7 @@
 
 .user-component {
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 /* 2개의 column을 다른 클래스명을 주는 게 아니라, 똑같이 하고, first-child이런 식으로 명시 */
 .user-component,
