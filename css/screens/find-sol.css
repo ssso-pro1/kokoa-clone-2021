@@ -1,0 +1,40 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.find-icons__icon span {
+  /* icon마다 다른 높이 보기 안 좋아서 통일할 수 있도록 span위의 마진값 줌 */
+  margin-top: 15px;
+}
+
+.recommended-friends {
+  margin: 25px 0px;
+  padding-bottom: 25px 0px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.3); */
+  /* border 가 자주 사용되기 떄문에 variable에 변수로 만들기 */
+  /* 안쪽으로 들어오는 것 : padding */
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: rgba var(--color-black-5);
+}
+
+.recommended-friends span {
+  margin: 100px 0;
+  /* span 은 text-align 안 먹혀서 block 으로 바꿔줌 */
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-black-5);
+}
