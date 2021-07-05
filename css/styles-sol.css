@@ -16,18 +16,22 @@
 @import 'components/screen-header-sol.css';
 @import 'components/user-component-sol.css';
 @import 'components/badge-sol.css';
+@import 'components/icon-row.css'; /* Screens */
 
 /* Screens */
 @import 'screens/login-sol.css'; /* 1 font-family : apple */
-/* @import "screens/friends-sol.css"; */
-@import 'screens/friends.css';
-/* @import 'screens/find.css'; */
+@import 'screens/friends-sol.css';
 @import 'screens/find-sol.css';
+@import 'screens/more-sol.css';
 
 /* styles.css 파일에는 font-family, background-color 등과 같이 모든 스크린에 적용될 수 있는 스타일 써두는 것 */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e363e;
+}
+
+.screen-header h1 {
+  margin-top: 20px;
 }
 
 .main-screen {
