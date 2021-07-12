@@ -33,3 +33,40 @@
   justify-content: space-between;
   color: var(--color-black-5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* 마우스에 걸리지 않게 해줌 . html은 여전히 있지만 클릭은 가능. 만약 아예 html을 제거하고 싶으면 js를 사용해야함.
+    이건 브라우저가 이 요소를 무시하게 해주는 것일 뿐이다! */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0; /* absolute하고 화면의 가장 위로 움직임(body기준으로) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  color: rgb(36, 154, 201);
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+  /* 3. animation효과가 2초뒤에 발생 (splash-screen에서 대기하다가 animation 효과) 로딩되는 것 같은 효과 부여 */
+  /* 
+  1. forwards : 마지막 속성값은 마지막 keyframes으로 정해지고 애니메이션이 끝나고 유지한다.
+  이 경우 : 마지막속성인 opacity: 0; 을 유지한다.
+  이 속성을 부여하지 않을 경우 : splash-screen 은 opacity: 0 애니메이션 효과주고 다시 원래 속성으로 돌아오게 됨!
+
+  
+  2. 여기서 문제 : splash-screen 은 아직 그대로 있어서 friend.html 이 클릭이 불가해짐 -> visibility: hidden;
+  
+  */
+}
