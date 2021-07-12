@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Settings - Kokoa Clone</title>
+    <title>7. Chat w/ - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <!-- status-bar -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -27,76 +27,60 @@
     <!-- HEADER -->
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more-sol.html">
+        <a href="chats-sol.html">
           <i class="fas fa-chevron-left fa-2x"></i>
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">Settings</h1>
+        <h1 class="alt-header__title">Sssoyeon</h1>
       </div>
       <div class="alt-header__column">
         <span><i class="fas fa-search fa-lg"></i>
+        <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
     <!-- MAIN -->
-    <main class="main-screen">
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Monday, July 12, 2021
+      </div>
 
-      <ul class="settings-list">
-
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i></i>
-            <span>Notices</span>
+      <div class="message-row">
+        <img src="noonsong.png" alt="">
+        <div class="message-row__content">
+          <span class="message__author">Soyeon</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">15:50</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
+        </div>
+      </div>
 
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask fa-lg"></i>
-            <span>Kakoa Lab</span>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">15:50</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
+        </div>
+      </div>
+    </main>
 
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="far fa-question-circle fa-lg"></i>
-            <span>Version</span>
-          </div>
-          <div class="settings__setting-column">Latest Version</div>
-        </li>
-
-
-      </ul>
-    </ㅡ>
-
-    <!-- NAV -->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends-sol.html"><i class="far fa-user fa-2x"></i></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats-sol.html">
-            <span class="nav__notification badge">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find-sol.html">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more-sol.html">
-            <span class="nav-notification2"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-beam fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>        
+        </button>
+      </div>
+    </form>
+      
+    
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
