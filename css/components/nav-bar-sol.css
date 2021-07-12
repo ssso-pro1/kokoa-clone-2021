@@ -16,24 +16,21 @@
   color: #2e363e;
 }
 
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 /* reset-sol.css 에 작성 */
 /* .nav__link {
   color: inherit;
-} */
-
-/* .friends-nav__chat-icon {
-  position: relative;
-} */
-
-/* .nav-chat__num {
-  background-color: rgb(255, 77, 45);
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 20px;
-  color: white;
 } */
 
 /* - border을 사각형으로 만들고 싶다면, radius를 width의 절반값을 주면된다. */
@@ -47,6 +44,7 @@
   position: absolute;
   left: 15px;
   bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 .nav__notification2 {
@@ -57,4 +55,33 @@
   position: absolute;
   top: -13px;
   right: -5px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.nav__btn:last-child {
+  animation-delay: 0.75s;
 }
