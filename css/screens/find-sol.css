@@ -104,3 +104,25 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: tomato;
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+/* will change: 브라우저에게 뭔가 바뀔 것이라고 알려주는 것 
+미리 알려주면 애니메이션 효과가 더 좋게 나옴 (렌더링 힌트를 준다)
+그래픽카드를 이용해서 애니메이션 효과를 가속화시키고, 브라우저를 도와줌*/
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
