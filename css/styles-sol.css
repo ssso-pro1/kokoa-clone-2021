@@ -16,13 +16,18 @@
 @import 'components/screen-header-sol.css';
 @import 'components/user-component-sol.css';
 @import 'components/badge-sol.css';
-@import 'components/icon-row.css'; /* Screens */
+@import 'components/icon-row.css';
+@import 'components/alt-screen-header.css';
 
 /* Screens */
 @import 'screens/login-sol.css'; /* 1 font-family : apple */
 @import 'screens/friends-sol.css';
 @import 'screens/find-sol.css';
 @import 'screens/more-sol.css';
+/* @import 'screens/settings.css'; */
+@import 'screens/settings-sol.css';
+@import 'screens/chat-sol.css';
+/* @import 'screens/chat.css'; */
 
 /* styles.css 파일에는 font-family, background-color 등과 같이 모든 스크린에 적용될 수 있는 스타일 써두는 것 */
 body {
